@@ -62,8 +62,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['concat', 'uglify', 'compare_size']);
+    grunt.registerTask('build', ['concat', 'uglify', 'compare_size']);
 
     // Test task(s).
-    grunt.registerTask('test', ['default', 'jshint', 'qunit']);
+    grunt.registerTask('test', ['jshint', 'qunit']);
+
+    // Default task(s).
+    grunt.registerTask('default', ['build', 'test']);
 };
