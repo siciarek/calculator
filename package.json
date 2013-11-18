@@ -1,0 +1,34 @@
+{
+    "name": "calculator",
+    "description": "Simple JavaScript calculator",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/johndoe/calculator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/johndoe/calculator/issues"
+    },
+    "homepage": "https://github.com/johndoe/calculator",
+    "main": "Gruntfile.js",
+    "scripts": {
+        "test": "test"
+    },
+    "keywords": [
+        "calculator",
+        "javascript"
+    ],
+    "author": "John Doe",
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-compare-size": "*",
+        "grunt-contrib-qunit": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-nodeunit": "*"
+    }
+}
