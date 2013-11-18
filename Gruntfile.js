@@ -42,6 +42,12 @@ module.exports = function(grunt) {
                 "!dist/*.min.js"
             ]
         },
+        jsdoc : {
+            dist : {
+                src: ['src/*.js', 'tests/*.js', 'README.md'],
+                dest: 'doc'
+            }
+        },
         watch: {
             scripts: {
                 files: ['**/*.js'],
@@ -60,6 +66,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-jsdoc');
 
     // Default task(s).
     grunt.registerTask('build', ['concat', 'uglify', 'compare_size']);
