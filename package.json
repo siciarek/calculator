@@ -1,6 +1,6 @@
 {
     "name": "calculator",
-    "description": "Simple JavaScript calculator",
+    "description": "Simple JavaScript calculator - Node.js tutorial part",
     "version": "0.1.0",
     "repository": {
         "type": "git",
